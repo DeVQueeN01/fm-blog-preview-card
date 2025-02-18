@@ -1,0 +1,110 @@
+:root {
+  /* colors */
+  --color-yellow: #f4d04e;
+  --color-white: #fff;
+  --color-gray-950: #111;
+  --color-gray-500: #6b6b6b;
+  /* font-size */
+  --font-size-text-preset-1: 2.5rem;
+  --font-size-text-preset-2: 1rem;
+  --font-size-text-preset-3: 0.875rem;
+  /* spacing */
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 1.5rem;
+}
+
+body {
+  background: var(--color-yellow);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* - */
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* - */
+  padding: var(--spacing-200);
+  border-radius: 1.25rem;
+  /* - */
+  border: 1px solid var(--color-gray-950);
+  background: var(--color-white);
+  box-shadow: 8px 8px 0px 0px #000;
+  width: 21rem;
+}
+
+/* card-header */
+
+.card-header h3 {
+  color: var(--color-gray-950, #111);
+  /* text-preset-3-bold */
+  font-family: Figtree;
+  font-size: var(--font-size-text-preset-3);
+  font-weight: 800;
+  /* - */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* - */
+  padding: var(--spacing-50) var(--spacing-150);
+  border-radius: 0.25rem;
+  background: var(--color-yellow);
+  width: 5.125rem;
+  margin-top: 1.5rem;
+}
+
+.card-header p {
+  color: var(--color-gray-950);
+  /* text-preset-3 */
+  font-family: Figtree;
+  font-size: var(--font-size-text-preset-3);
+  font-weight: 400;
+  margin: 0.75rem 0rem;
+}
+
+/* card-body */
+
+.card-body h1 {
+  color: var(--color-gray-950);
+  /* text-preset-1 */
+  font-family: Figtree;
+  font-size: var(--spacing-200);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  color: var(--color-gray-500);
+  /* text-preset-2 */
+  font-family: Figtree;
+  font-size: var(--font-size-text-preset-2);
+  font-weight: 500;
+  line-height: 150%; /* 1.5rem */
+}
+
+/* card-footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* - */
+  margin-top: 1.5rem;
+  gap: var(--spacing-150);
+}
+
+.card-footer p {
+  color: var(--color-gray-95);
+  /* text-preset-3-bold */
+  font-family: Figtree;
+  font-size: var(--font-size-text-preset-3);
+  font-weight: 800;
+}
