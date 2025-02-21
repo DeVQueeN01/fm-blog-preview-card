@@ -42,6 +42,10 @@ main {
   width: 21rem;
 }
 
+.card-header img {
+  width: 21rem;
+}
+
 /* card-header */
 
 .card-header h3 {
@@ -87,7 +91,7 @@ main {
   cursor: pointer;
 }
 
-.card-body {
+.card-body p {
   color: var(--color-gray-500);
   /* text-preset-2 */
   font-family: Figtree;
@@ -112,4 +116,24 @@ main {
   font-family: Figtree;
   font-size: var(--font-size-text-preset-3);
   font-weight: 800;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .card-header img {
+    width: 17rem;
+  }
+
+  .card {
+    overflow: hidden;
+    width: 17rem;
+  }
+
+  .card-body h1 {
+    font-size: 1.25rem;
+  }
+
+  .card-body p {
+    font-size: 0.875rem;
+  }
 }
